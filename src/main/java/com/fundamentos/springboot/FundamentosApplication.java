@@ -46,8 +46,8 @@ public class FundamentosApplication  implements CommandLineRunner {
 		System.out.println(userPojo.getEmail() + "-" + userPojo.getPassword() + "-" + userPojo.getAge());
 
 		try {
-			int value = 10/0;
-			LOGGER.debug("Mi valor: " + value);
+			//int value = 10/0;
+			//LOGGER.debug("Mi valor: " + value);
 		} catch (Exception e){
 			LOGGER.error("Esto es un error al divir por 0" + e.getStackTrace());
 		}
