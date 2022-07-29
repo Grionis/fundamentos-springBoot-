@@ -26,15 +26,6 @@ public class MyConfigurationBean {
         return new MyBeanWithDependencyImplement(myOperation);
     }
 
-    @Bean
-    public DataSource dataSource(){
-        DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
-        dataSourceBuilder.driverClassName("org.h2.Driver");
-        dataSourceBuilder.url("jdbc:h2:mem:testdb");
-        dataSourceBuilder.username("SA");
-        dataSourceBuilder.password("");
 
-        return dataSourceBuilder.build();
-    }
 
 }
